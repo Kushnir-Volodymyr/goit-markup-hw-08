@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include for-size(mobile) {
+    width: 480px;
+  }
+  @include for-size(tablet) {
+    width: 768px;
+  }
+  @include for-size(desktop) {
+    width: 1200px;
+  }
+
+  // for responsive
+  // @include for-size(mobile) {
+  //   max-width: 480px;
+  // }
+  // @include for-size(tablet) {
+  //   max-width: 768px;
+  // }
+  // @include for-size(desktop) {
+  //   max-width: 1200px;
+  // }
+
+  // for adaptive
+  // @include for-size(mobile) {
+  //   width: calc(480px - 18px);
+  // }
+  // @include for-size(tablet) {
+  //   width: calc(768px - 18px);
+  // }
+  // @include for-size(desktop) {
+  //   width: calc(1200px - 18px);
+  // }
+}
