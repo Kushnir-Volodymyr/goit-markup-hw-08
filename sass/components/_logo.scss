@@ -1,39 +1,31 @@
-// Logo
-
 .logo {
-  display: block;
-  font-size: 2.4rem;
-  line-height: calc(28 / 24);
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  color: $logoBasic;
 
-  color: #000000;
-
-  font-family: Raleway, sans-serif;
-  font-weight: $bold-font-weight;
-
-  @include for-size(tablet-without) {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-
-  @include for-size(tablet) {
-    padding-top: 26px;
-    padding-bottom: 26px;
-  }
-
-  @include for-size(desktop) {
-    padding-top: 24px;
-    padding-bottom: 24px;
-
-    font-size: 2.6rem;
-    /* 1.19 */
-    line-height: calc(31 / 26);
-  }
-
-  .link {
-    display: block;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.192;
   }
 }
 
-.logo__accent {
-  color: $accent-color;
+.logo__web {
+  color: $logoWeb;
+}
+
+.logo__header {
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+
+.logo__footer {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.logo__studio {
+  color: $logoStudioFooter;
 }
